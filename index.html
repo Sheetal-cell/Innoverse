@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroEase - Inclusive Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NeuroEase</h1>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <button id="toggleDyslexicFont">Dyslexic-Friendly Font</button>
+    </header>
+    
+    <section id="overview">
+        <h2>Project Idea: NeuroEase – An Inclusive Web App for Neurodiverse Individuals</h2>
+        <p>NeuroEase is a web-based platform designed to support neurodiverse individuals by providing personalized assistance in education, employment, and daily life. It integrates accessibility features, AI-driven customization, and Google tools to enhance inclusivity.</p>
+    </section>
+    
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Customizable UI for Sensory Preferences:</strong> Adjustable color schemes, dyslexic-friendly fonts, sound/motion control.</li>
+            <li><strong>AI-Powered Smart Assistant (Gemini API + Vertex AI):</strong> Task guidance, AI explanations, adaptive learning support.</li>
+            <li><strong>Task Management & Executive Functioning Support:</strong> To-do lists, visual schedule planner, Pomodoro timer.</li>
+            <li><strong>Job and Skill Matching Platform:</strong> AI-powered job suggestions, resume assistance, employer resources.</li>
+            <li><strong>Emotion and Stress Management:</strong> Mood tracking, mindfulness exercises, text-to-speech check-ins.</li>
+            <li><strong>Community and Support Forum:</strong> Safe space, Q&A sessions, mentorship programs, resource hub.</li>
+        </ul>
+    </section>
+    
+    <section id="techStack">
+        <h2>Tech Stack</h2>
+        <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>APIs & Tools:</strong> Google Gemini API (AI chatbot), Vertex AI, IDX, Firebase</p>
+        <p><strong>Accessibility Features:</strong> ARIA roles, keyboard navigation, screen reader support</p>
+    </section>
+    
+    <section id="taskManager">
+        <h2>Task Manager</h2>
+        <input type="text" id="taskInput" placeholder="Add a task...">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </section>
+    
+    <section id="aiAssistant">
+        <h2>AI Assistant</h2>
+        <input type="text" id="aiQuery" placeholder="Ask AI something...">
+        <button onclick="askAI()">Ask</button>
+        <p id="aiResponse"></p>
+    </section>
+    
+    <section id="moodTracker">
+        <h2>Mood Tracker</h2>
+        <select id="moodSelect">
+            <option value="happy">😊 Happy</option>
+            <option value="neutral">😐 Neutral</option>
+            <option value="sad">😢 Sad</option>
+        </select>
+        <button onclick="trackMood()">Log Mood</button>
+        <ul id="moodLogs"></ul>
+    </section>
+    
+    <section id="jobMatcher">
+        <h2>Job & Skill Matching</h2>
+        <input type="text" id="skillInput" placeholder="Enter your skills...">
+        <button onclick="matchJob()">Find Jobs</button>
+        <ul id="jobResults"></ul>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
