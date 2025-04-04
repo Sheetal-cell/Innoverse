@@ -1,74 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroEase - Inclusive Web App</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innoverse</title>
+  <link rel="icon" href="assets/TuneTide logo.jpg" type="image/x-icon">
+  <link rel="icon" href="assets/TuneTide logo.jpg" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>NeuroEase</h1>
-        <button id="toggleDarkMode">Toggle Dark Mode</button>
-        <button id="toggleDyslexicFont">Dyslexic-Friendly Font</button>
-    </header>
-    
-    <section id="overview">
-        <h2>Project Idea: NeuroEase – An Inclusive Web App for Neurodiverse Individuals</h2>
-        <p>NeuroEase is a web-based platform designed to support neurodiverse individuals by providing personalized assistance in education, employment, and daily life. It integrates accessibility features, AI-driven customization, and Google tools to enhance inclusivity.</p>
-    </section>
-    
-    <section id="features">
-        <h2>Key Features</h2>
+  <header>
+    <img width="200px" src="images/1732165162511.jpg" alt="">
+    <div class="container">
+      <h1>Innoverse</h1>
+      <h2 id="tagline">Embracing Neurodiversity, Empowering Innovation</h2>
+      <nav>
         <ul>
-            <li><strong>Customizable UI for Sensory Preferences:</strong> Adjustable color schemes, dyslexic-friendly fonts, sound/motion control.</li>
-            <li><strong>AI-Powered Smart Assistant (Gemini API + Vertex AI):</strong> Task guidance, AI explanations, adaptive learning support.</li>
-            <li><strong>Task Management & Executive Functioning Support:</strong> To-do lists, visual schedule planner, Pomodoro timer.</li>
-            <li><strong>Job and Skill Matching Platform:</strong> AI-powered job suggestions, resume assistance, employer resources.</li>
-            <li><strong>Emotion and Stress Management:</strong> Mood tracking, mindfulness exercises, text-to-speech check-ins.</li>
-            <li><strong>Community and Support Forum:</strong> Safe space, Q&A sessions, mentorship programs, resource hub.</li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#Neural_Awareness">Neural Awareness</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#workouts">Workouts</a></li>
+          <li><a href="#jobs">Job Recom</a></li>
+          <li><a href="#top_posts">Top Posts</a></li>
+          <li><a href="#GitHub_Repositories">GitHub Repositories</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
-    
-    <section id="techStack">
-        <h2>Tech Stack</h2>
-        <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
-        <p><strong>APIs & Tools:</strong> Google Gemini API (AI chatbot), Vertex AI, IDX, Firebase</p>
-        <p><strong>Accessibility Features:</strong> ARIA roles, keyboard navigation, screen reader support</p>
-    </section>
-    
-    <section id="taskManager">
-        <h2>Task Manager</h2>
-        <input type="text" id="taskInput" placeholder="Add a task...">
-        <button onclick="addTask()">Add Task</button>
-        <ul id="taskList"></ul>
-    </section>
-    
-    <section id="aiAssistant">
-        <h2>AI Assistant</h2>
-        <input type="text" id="aiQuery" placeholder="Ask AI something...">
-        <button onclick="askAI()">Ask</button>
-        <p id="aiResponse"></p>
-    </section>
-    
-    <section id="moodTracker">
-        <h2>Mood Tracker</h2>
-        <select id="moodSelect">
-            <option value="happy">😊 Happy</option>
-            <option value="neutral">😐 Neutral</option>
-            <option value="sad">😢 Sad</option>
-        </select>
-        <button onclick="trackMood()">Log Mood</button>
-        <ul id="moodLogs"></ul>
-    </section>
-    
-    <section id="jobMatcher">
-        <h2>Job & Skill Matching</h2>
-        <input type="text" id="skillInput" placeholder="Enter your skills...">
-        <button onclick="matchJob()">Find Jobs</button>
-        <ul id="jobResults"></ul>
-    </section>
-    
-    <script src="script.js"></script>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Imagine a world where every brain is celebrated for its unique way of thinking, learning, and creating. That’s the essence of neurodiversity—a perspective that recognizes neurological differences like Autism, ADHD, Dyslexia, and more as natural variations of the human mind, not deficits to be fixed.
+      </p>
+      <br>
+
+      <p>🧠 Different minds bring different strengths! Some excel at pattern recognition, others at problem-solving, creativity, or deep focus. Instead of trying to fit everyone into the same mold, neurodiversity encourages us to value and harness these differences—because innovation thrives when diverse minds collaborate.</p>
+      <br>
+
+      <p>At InnoVerse, we believe that true progress happens when we break barriers, embrace inclusivity, and create a world where neurodivergent individuals are not just accepted, but empowered. Whether in education, workplaces, or everyday life, neurodivergent perspectives spark new ideas, challenge the norm, and redefine what’s possible.</p>
+      <br>
+
+      <p>💡 Let’s build a future where every mind matters. Where thinking differently isn’t just okay—it’s the key to innovation. Welcome to a space where your mind is your superpower! 🚀</p>
+    </div>
+  </section>
+
+  <section id="Neural_Awareness">
+    <div class="container">
+      <h1>Education</h1>
+      <p><h2>10th (SSC)</h2></p>
+      <p>Grade:- 96.4% (Central Board of Secondary Education)</p>
+      <br>
+      <p><h2>12th (HSC)</h2></p>
+      <p>Grade:- 86% -PCM (Central Board of Secondary Education)</p>
+      <br>
+      <p><h2>B.Tech (IT)</h2></p>
+      <p>First Year Student @Maulana Abul Kalam Azad University of Technology,West Bengal.</p>
+      <br>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h1>Skills</h1>
+      <p><h3>Web Development</h3> <ul><li>HTML</li> <li>CSS</li> </ul></p>
+      <p><h3>Programming Languages</h3> <ul><li>C</li><li>C++</li><li>Python</li> </ul></p>
+      <p><h3>Tools</h3> <ul><li>Git</li> <li>GitHub</li><li>VS Code</li> </ul></p>
+      <p><h3>Blogging</h3> <ul><li>Creative Writing</li> <li>Technical Writing</li> </ul></p>
+    </div>
+  </section>
+
+  <section id="workouts">
+    <div class="container">
+
+      <h1>Projects</h1>
+      <input type="text" id="projectSearch" placeholder="Search projects..." />
+      <br>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Event Management Website</h3>
+          <a href = "https://anweshan-2k24.netlify.app/"><img width="500px" src="images/Screenshot 2024-12-24 140355.png" alt=""></a>
+          <p>This Website was developed as part of a project for Anweshan, the annual tech and cultural fest of our college. The website serves as a centralized platform to showcase all aspects of the fest, including event details, schedules, registrations, and updates.</p>
+          <p>--Tech Stack:--</p>
+          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
+          <p>Version Control:GitHub(for collaborative development)</p>
+          <p>Hosting Platform:Netify</p>
+          <p>The project won the 'Best Freshers Team' Award for its innovative approach and teamwork.</p>
+          <p>Link to the project: <a href="https://anweshan-2k24.netlify.app/">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio</h3>
+          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
+          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
+          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
+          <p>Version Control:GitHub(for collaborative development)</p>
+          <p>Hosting Platform:Netify</p>
+          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blogs">
+    <div class="container">
+      <h2>Blogs</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Blog 1</h3>
+          <p>GitHub Basics</p>
+          <a href = "https://sheetal-bajaj.hashnode.dev/github-basics-creating-and-setting-up-a-repository"><img width="200px" src="images/WhatsApp Image 2024-12-01 at 14.49.11_3ac3280d.jpg" alt=""></a>
+          <p>An introductory article aimed at helping newcomers understand the fundamentals of GitHub</p>
+          <p>The blog is beginner-friendly and includes practical examples, making it an excellent resource for students, freshers, and anyone looking to explore GitHub for the first time.</p>
+          <p>Platform:- Hashnode</p>
+          <p>Link to the Blog: <a href="https://sheetal-bajaj.hashnode.dev/github-basics-creating-and-setting-up-a-repository">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Blog 2</h3>
+          <p>Git Branching</p>
+          <a href = "https://sheetal-bajaj.hashnode.dev/mastering-github-beyond-the-basics"><img width="200px" src="images/WhatsApp Image 2024-12-08 at 12.23.03_bf5dc07d.jpg" alt=""></a>
+          <p>This blog is a follow-up to the introductory guide, designed to help readers deepen their understanding of GitHub. It focuses on advanced features and workflows that enhance productivity and collaboration.</p>
+          <p>Includes real-world examples and actionable tips</p>
+          <p>Platform:- Hashnode</p>
+          <p>Link to the Blog: <a href="https://sheetal-bajaj.hashnode.dev/mastering-github-beyond-the-basics">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Blog 3</h3>
+          <p>First Hackathon Experience</p>
+          <a href = "https://sheetal-bajaj.hashnode.dev/my-first-hackathon-experience"><img width="200px" src="images/1_EqRlTgDCl7rVdfMd3uvOgA.jpg" alt=""></a>
+          <p>This blog shares an exciting journey of participating in a hackathon for the first time. It captures the challenges, teamwork, and accomplishments involved in creating a website, and winning the 'Best Freshers Team' award.</p>
+          <p>This blog is a personal reflection on an unforgettable milestone and aims to inspire readers to explore hackathons.</p>
+          <p>Platform:- Hashnode</p>
+          <p>Link to the Blog: <a href="https://sheetal-bajaj.hashnode.dev/my-first-hackathon-experience">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Blog 4</h3>
+          <p>First Hackathon Experience-Dev.to</p>
+          <a href = "https://dev.to/sheetal_bajaj/my-first-hackathon-experience-386g"><img width="200px" src="images/1_EqRlTgDCl7rVdfMd3uvOgA.jpg" alt=""></a>
+          <p>This blog is a brief account of my first hackathon journey, where my team developed a website. We overcame challenges, learned collaboratively, and won the 'Best Freshers Team' award, making it a memorable and rewarding experience</p>
+          <p>Platform:- Dev.to</p>
+          <p>Link to the Blog: <a href="https://dev.to/sheetal_bajaj/my-first-hackathon-experience-386g">Click Here</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="top_posts">
+    <div class="container">
+      <h1>Top Posts in LinkedIn</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Won Best Freshers Team in First Hackathon</h3>
+          <a href = "https://www.linkedin.com/feed/update/urn:li:activity:7264655385108615168/"><img width="200px" src="images/Screenshot 2024-12-30 131125.png" alt=""></a>
+          <p>This post throws light on my very first hackathon which resulted as the best freshers award.In this post I have shred some insights about the event and my own personal experience about hackathon as a fresher</p>
+          <p>Do check it out through the below given link or just click on the above inserted image</p>
+          <p>Link to the Post: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7264655385108615168/">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>One month to DSA</h3>
+          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131704.png" alt=""></a>
+          <p>In this post on completing a month of DSA,I have shared my learnt topics and insights on how to be consistent over the period.</p>
+          <p>Do check it out through the below given link or just click on the above inserted image</p>
+          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Published First Blog on Hashnode</h3>
+          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_linkedinmembers-blog-repository-activity-7268946780925394944-EfMO?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131642.png" alt=""></a>
+          <p>This post is about publishing my first blog on and that too on GitHub on Hashnode.</p>
+          <p>Do check it out through the below given link or just click on the above inserted image</p>
+          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_linkedinmembers-blog-repository-activity-7268946780925394944-EfMO?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="GitHub_Repositories">
+    <div class="container">
+      <h1> My Top GitHub Repositories and Commits</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Codes of DSA on C++</h3>
+          <a href = "https://github.com/Sheetal-cell/DSA-Cpp"><img width="200px" src="images/Screenshot 2024-12-30 134451.png" alt=""></a>
+          <p>This repository contains implementations of various Data Structures and Algorithms (DSA) in C++ which I have learnt till date of my DSA journy and this has been continuously updated with new coming concepts of C++.</p>
+          <p>Link to the Post: <a href="https://github.com/Sheetal-cell/DSA-Cpp">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Codes of this portfolio project</h3>
+          <a href = "https://github.com/Sheetal-cell/Portfolio-project"><img width="200px" src="images/Screenshot 2024-12-30 134616.png" alt=""></a>
+          <p>This repository contains the source code for my Personal Portfolio Website, designed to showcase my skills, projects, and achievements in a visually appealing manner with commit messages and used images.</p>
+          <p>Link to the Post: <a href="https://github.com/Sheetal-cell/Portfolio-project">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Codes for Hackathon website project</h3>
+          <a href = "https://github.com/Sheetal-cell/Anweshan-project"><img width="200px" src="images/Screenshot 2024-12-30 134543.png" alt=""></a>
+          <p>This repository contains the code for the Event Management Website, developed as part of my team's project during the hackathon at our college. The website serves as a central platform for showcasing event details, schedules, registrations, and updates for the fest.</p>
+          <p>Link to the Post: <a href="https://github.com/Sheetal-cell/Anweshan-project">Click Here</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h1>Contact Me</h1>
+      <p>Email: <a href="sheetalbajajgodda@gmail.com">Click Here</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sheetal-bajaj-s06091009/">Click Here</a></p>
+      <p>GitHub: <a href="https://github.com/Sheetal-cell">Click Here</a></p>
+      <p>Twitter: <a href="https://x.com/Sheetal_11">Click Here</a></p>
+      <p>Hashnode: <a href="https://hashnode.com/@SheetalBajaj">Click Here</a></p>
+      <p>Dev: <a href="https://dev.to/sheetal_bajaj">Click Here</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 3s Coders. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
 </body>
 </html>
