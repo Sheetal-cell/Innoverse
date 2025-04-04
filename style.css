@@ -66,7 +66,9 @@ body {
   #about {
     h1{
       text-align: center;
+      color: rgb(0, 5, 61);
     }
+    
     padding: 50px 0;
     background:radial-gradient(rgb(250, 181, 144),rgb(231, 145, 99),rgb(139, 60, 26));
   
@@ -78,6 +80,7 @@ body {
   #about p {
     h1{
       text-align: center;
+      color: rgb(0, 5, 61);
     }
     max-width: 1000px;
     margin: 0 auto;
@@ -87,9 +90,11 @@ body {
   #awareness {
     h1{
       text-align: center;
+      color: rgb(0, 5, 61);
     }
     padding: 50px 0;
     background:radial-gradient(rgb(229, 132, 80),black);
+    color: rgb(0, 9, 113);
  
   }
   .dark-mode #awareness{
@@ -106,6 +111,7 @@ body {
     
     h1{
       text-align:center;
+      color: rgb(0, 5, 61);
     }
     padding: 50px 0;
     .container{
@@ -142,6 +148,11 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    color: rgb(0, 8, 101);
+    h1{
+      text-align: center;
+      color: rgb(0, 5, 61);
+    }
     
   }
   .dark-mode #workouts{
@@ -181,6 +192,11 @@ body {
   #jobs {
     padding: 50px 0;
     text-align: center;
+    h1{
+      text-align: center;
+      color: rgb(0, 5, 61);
+    }
+    color: #030053;
   }
   .dark-mode #jobs{
     background: radial-gradient(rgb(255, 245, 245),rgb(91, 88, 86));
@@ -206,6 +222,11 @@ body {
   #doctors {
     padding: 50px 0;
     text-align: center;
+    h1{
+      text-align: center;
+      color: rgb(0, 5, 61);
+    }
+    color: #030057;
   }
   .dark-mode #doctors{
     background: radial-gradient(rgb(255, 245, 245),rgb(91, 88, 86));
@@ -230,7 +251,12 @@ body {
   
   #reviews {
     padding: 50px 0;
-    text-align: center;
+    text-align: center;h1{
+      text-align: center;
+      color: rgb(0, 5, 61);
+    }
+    color: #030057;
+
   }
   .dark-mode #reviews{
     background: radial-gradient(rgb(255, 245, 245),rgb(91, 88, 86));
@@ -317,6 +343,11 @@ nav ul li a.active {
   h1{
     text-align: center;
   }
+  h1{
+    text-align: center;
+    color: rgb(0, 5, 61);
+  }
+  color: #030057;
 }
 .dark-mode footer{
   color: #ffffff;
