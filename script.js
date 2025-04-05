@@ -121,3 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", updateActiveNav);
 });
+function showWorkout(type) {
+    document.getElementById("workout-options").style.display = "none";
+    document.querySelectorAll(".workout-section").forEach(section => section.style.display = "none");
+    document.getElementById(type).style.display = "block";
+  }
+  
+  function goBack() {
+    document.querySelectorAll(".workout-section").forEach(section => section.style.display = "none");
+    document.getElementById("workout-options").style.display = "block";
+  }
+  

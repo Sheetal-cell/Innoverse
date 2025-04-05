@@ -57,9 +57,14 @@ body {
   }
   
   header nav ul li a {
-    color: rgb(213, 241, 251);
+    color: rgb(0, 8, 49);
     text-decoration: none;
     font-weight: bold;
+  }
+  header nav ul li a :hover {
+    color: rgb(0, 3, 16);
+    text-decoration: underline;
+    
   }
   
   /* About Section */

@@ -121,83 +121,87 @@
       <h1>Beneficial Workouts</h1>
       <input type="text" id="projectSearch" placeholder="Search workouts..." />
       <br>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Event Management Website</h3>
-          <a href = "https://anweshan-2k24.netlify.app/"><img width="500px" src="images/Screenshot 2024-12-24 140355.png" alt=""></a>
-          <p>This Website was developed as part of a project for Anweshan, the annual tech and cultural fest of our college. The website serves as a centralized platform to showcase all aspects of the fest, including event details, schedules, registrations, and updates.</p>
-          <p>--Tech Stack:--</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>The project won the 'Best Freshers Team' Award for its innovative approach and teamwork.</p>
-          <p>Link to the project: <a href="https://anweshan-2k24.netlify.app/">Click Here</a></p>
+      <section id="workout-options" class="container">
+        <h2>Select a Workout Category</h2>
+        <div class="project-grid">
+          <button class="project-card" onclick="showWorkout('adhd')">ADHD</button>
+          <button class="project-card" onclick="showWorkout('autism')">Autism</button>
+          <button class="project-card" onclick="showWorkout('dyslexia')">Dyslexia</button>
+          <button class="project-card" onclick="showWorkout('other')">Others</button>
         </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
+      </section>
+    
+      <!-- ADHD Section -->
+      <section id="adhd" class="workout-section container" style="display:none">
+        <h2>ADHD Workouts</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="assets/adhdyoga.jpeg" alt="Yoga for ADHD">
+            <h3>Yoga for Focus</h3>
+            <a href="https://youtu.be/y5EqO8CQ_cQ?si=PbwGrUkOZt6G3kw8" target="_blank">Watch</a>
+          </div>
+          <div class="project-card">
+            <img src="assets/adhd2.jpeg" alt="Balancing Exercises">
+            <h3>Balancing Exercises</h3>
+            <a href="https://youtu.be/bNIC0tYhZNo?si=M_VNP_vZoC06Vv0A" target="_blank">Watch</a>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
+        <button onclick="goBack()">← Back</button>
+      </section>
+    
+      <!-- Autism Section -->
+      <section id="autism" class="workout-section container" style="display:none">
+        <h2>Autism Workouts</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="assets/autism2.jpg" alt="Stretching">
+            <h3>Stretch & Calm</h3>
+            <a href="https://youtu.be/SfJiYVgyfvI?si=iHziD5oPm5CPpZH8" target="_blank">Watch</a>
+          </div>
+          <div class="project-card">
+            <img src="assets/autism1.jpg" alt="Sensory Play">
+            <h3>Sensory Movement</h3>
+            <a href="https://youtu.be/P2E1hrmcwDE?si=OYHiqwwmS9YH_iCM" target="_blank">Watch</a>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
+        <button onclick="goBack()">← Back</button>
+      </section>
+    
+      <!-- Dyslexia Section -->
+      <section id="dyslexia" class="workout-section container" style="display:none">
+        <h2>Dyslexia Workouts</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="assets/braingym.avif" alt="Brain Gym">
+            <h3>Brain Gym</h3>
+            <a href="https://youtu.be/KVm5QuXSxxA?si=pS75P9GHLbzUeDdH" target="_blank">Watch</a>
+          </div>
+          <div class="project-card">
+            <img src="assets/crosscrawl.jpg" alt="Cross Crawl">
+            <h3>Cross Crawl</h3>
+            <a href="https://youtu.be/u6jiONDwANM?si=0BKBfFpOKAYZNkO_" target="_blank">Watch</a>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
+        <button onclick="goBack()">← Back</button>
+      </section>
+    
+      <!-- Others Section -->
+      <section id="other" class="workout-section container" style="display:none">
+        <h2>Other Neuro Wellness Workouts</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="assets/breathing.webp" alt="Breathing">
+            <h3>Breathing Exercises</h3>
+            <a href="https://youtu.be/8TTABLdGCKI?si=W6QDe6P8N8SX5AzQ" target="_blank">Watch</a>
+          </div>
+          <div class="project-card">
+            <img src="assets/balance.jpg" alt="Balance Games">
+            <h3>Balance Games</h3>
+            <a href="https://youtu.be/xWBY4-lCvUc?si=0dPzHk6Y4giN_XYv" target="_blank">Watch</a>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
-        </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
-        </div>
-        <div class="project-card">
-          <h3>Portfolio</h3>
-          <img width="500px" src="images/Screenshot 2024-12-30 140345.png" alt="">
-          <p>The Personal Portfolio Website is an ongoing project designed to showcase my skills, projects, achievements, and professional journey. The website serves as a digital resume .</p>
-          <p>Frontend:<ul><li>HTML</li><li>CSS</li></p>
-          <p>Version Control:GitHub(for collaborative development)</p>
-          <p>Hosting Platform:Netify</p>
-          <p>This portfolio aims to reflect my personality and professional journey while serving as a functional, interactive, and aesthetically pleasing website to build my online presence and connect with the broader tech community.</p>
-        </div>
-      </div>
-    </div>
+        <button onclick="goBack()">← Back</button>
+      </section>
   </section>
 
   <section id="jobs">
