@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     topButton.id = "backToTop";
     document.body.appendChild(topButton);
 
-    // Style the button
     Object.assign(topButton.style, {
         position: "fixed",
         bottom: "20px",
@@ -79,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     darkModeButton.id = "darkModeToggle";
     document.body.appendChild(darkModeButton);
 
-    // Style the button
     Object.assign(darkModeButton.style, {
         position: "fixed",
         top: "20px",
@@ -121,14 +119,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", updateActiveNav);
 });
+
+// ✅ 7. Workout Section Switching
 function showWorkout(type) {
     document.getElementById("workout-options").style.display = "none";
     document.querySelectorAll(".workout-section").forEach(section => section.style.display = "none");
     document.getElementById(type).style.display = "block";
-  }
-  
-  function goBack() {
+}
+
+function goBack() {
     document.querySelectorAll(".workout-section").forEach(section => section.style.display = "none");
     document.getElementById("workout-options").style.display = "block";
-  }
-  
+}
