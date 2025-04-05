@@ -328,7 +328,7 @@ body {
 
 /* Active Navbar Link */
 nav ul li a.active {
-    color: #0c0050;
+    color: #00042e;
     font-weight: bold;
     border-bottom: 2px solid #02003b;
 }
@@ -356,4 +356,7 @@ nav ul li a.active {
 }
 .dark-mode footer{
   color: #ffffff;
+}
+a{
+  color: #02008b;
 }
