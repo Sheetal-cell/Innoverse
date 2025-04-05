@@ -405,3 +405,21 @@ a{
   outline: none;
   border-color: #6c63ff;
 }
+/*job button*/
+.apply-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.apply-btn:hover {
+  background-color: #45a049;
+}
+
+.info-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.info-btn:hover {
+  background-color: #1e88e5;
+}
