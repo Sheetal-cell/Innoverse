@@ -378,66 +378,128 @@
     </div>
   </section>
 
+  
   <section id="doctors">
     <div class="container">
       <h1>Top Doctors</h1>
+      
       <div class="search-container">
-        <input type="text" class="section-search" placeholder="Search by name or condition..." />
-
+        <!-- 🔍 Filter by Specialization -->
+        <select id="specializationFilter">
+          <option value="all">All Specializations</option>
+          <option value="Psychiatrist">Psychiatrist</option>
+          <option value="Psychologist">Psychologist</option>
+          <option value="Neurologist">Neurologist</option>
+          <option value="Pediatric Specialist">Pediatric Specialist</option>
+        </select>
+  
+        <!-- 🔍 Search by Name or Condition -->
+        <input type="text" class="section-search" id="projectSearch" placeholder="Search by name or condition..." />
       </div>
+  
       <div class="project-grid">
-        <div class="project-card">
-          <h3>Won Best Freshers Team in First Hackathon</h3>
-          <a href = "https://www.linkedin.com/feed/update/urn:li:activity:7264655385108615168/"><img width="200px" src="images/Screenshot 2024-12-30 131125.png" alt=""></a>
-          <p>This post throws light on my very first hackathon which resulted as the best freshers award.In this post I have shred some insights about the event and my own personal experience about hackathon as a fresher</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7264655385108615168/">Click Here</a></p>
+        <!-- Doctor Card 1 -->
+        <div class="project-card" data-specialization="Neurologist">
+          <h3>Dr Girija Sadalage</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/girija-sadalage" target="_blank">
+            <img src="assets/Dr Girija Sadalage.png" width="200px" alt="Dr. Girija Sadalage" />
+          </a>
+          <p><strong>Specialization:</strong> Neurologist</p>
+          <p><strong>Location:</strong> Birmingham,U.K</p>
+          <p>Dr Girija Sadalage is a highly regarded consultant neurologist practising at Circle Rehabilitation and The Harborne Hospital in Birmingham. Dr Sadalage has a vast array of experience treating chronic and acute neurological problems and specialises in Myasthenia Gravis, autoimmune encephalitis, neuromuscular disorders, headache, epilepsy and Parkinson's disease. </p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/girija-sadalage" target="_blank">Visit Profile</a></p>
         </div>
-        <div class="project-card">
-          <h3>One month to DSA</h3>
-          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131704.png" alt=""></a>
-          <p>In this post on completing a month of DSA,I have shared my learnt topics and insights on how to be consistent over the period.</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+  
+        <!-- Doctor Card 2 -->
+        <div class="project-card" data-specialization="Neurologist">
+          <h3>Dr Kuven Moodley</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/kuven-moodley" target="_blank">
+            <img src="assets/Dr Kuven Moodley.png" width="200px" alt="Dr Kuven Moodley" />
+          </a>
+          <p><strong>Specialization:</strong> Neurologist</p>
+          <p><strong>Location:</strong> London</p>
+          <p>Dr Moodley has specialist expertise in general neurology, acute neurology, headache, CSF disorders (including normal pressure hydrocephalus and intracranial hypotension), and cognitive disorders. The latter includes mild cognitive impairment (MCI), dementia, and cognitive syndromes arising from acquired brain injury.</p>
+          <p><a href="assets/Dr Kuven Moodley.png" target="_blank">Visit Profile</a></p>
         </div>
-        <div class="project-card">
-          <h3>One month to DSA</h3>
-          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131704.png" alt=""></a>
-          <p>In this post on completing a month of DSA,I have shared my learnt topics and insights on how to be consistent over the period.</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+  
+        <!-- Doctor Card 3 -->
+        <div class="project-card" data-specialization="Psychiatrist">
+          <h3>Dr Daniela Riano Barros</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/daniela-riano-barros" target="_blank">
+            <img src="assets/Dr Daniela Riano Barros.png" width="200px" alt="Dr Daniela Riano Barros" />
+          </a>
+          <p><strong>Specialization:</strong> Psychiatrist</p>
+          <p><strong>Location:</strong> London</p>
+          <p>Dr Daniela Riano Barros (known as Dr Barros) is a renowned and trusted consultant psychiatrist practising in London. She treats patients suffering from a multitude of neuropsychiatric, psychiatric and psychological disorders. Her areas of expertise include functional neurological disorders, dementia, traumatic brain injury, as well as mood disorders and she is also a medicolegal expert.</p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/daniela-riano-barros" target="_blank">Visit Profile</a></p>
         </div>
-        <div class="project-card">
-          <h3>One month to DSA</h3>
-          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131704.png" alt=""></a>
-          <p>In this post on completing a month of DSA,I have shared my learnt topics and insights on how to be consistent over the period.</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+  
+        <!-- Doctor Card 4 -->
+        <div class="project-card" data-specialization="Psychiatrist">
+          <h3>Dr Lokesh Bisati</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/lokesh-bisati" target="_blank">
+            <img src="assets/Dr Lokesh Bisati.png" width="200px" alt="Dr Lokesh Bisati" />
+          </a>
+          <p><strong>Specialization:</strong> Psychiatrist</p>
+          <p><strong>Location:</strong> Essex,U.K</p>
+          <p>Dr Lokesh Bisati is a leading consultant psychiatrist based in Chelmsford who specialises in child and adolescent psychiatry. With over 15 years’ experience, he provides assessment and treatment for a range of complex mental health conditions in children and young people, including Depression and Anxiety, as well as ADHD, Psychotic disorders, Bipolar disorder, Phobia, OCD, Self-Harm, Adjustment disorder, Trauma, Gender Dysphoria, Emotional dysregulation, Sleep disorders, SSD, Stress, Tourette’s Syndrome, Trichotillomania,autism.</p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/lokesh-bisati" target="_blank">Visit Profile</a></p>
         </div>
-        <div class="project-card">
-          <h3>One month to DSA</h3>
-          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131704.png" alt=""></a>
-          <p>In this post on completing a month of DSA,I have shared my learnt topics and insights on how to be consistent over the period.</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+  
+        <!-- Doctor Card 5 -->
+        <div class="project-card" data-specialization="Pediatric Specialist">
+          <h3>Dr Kishor Tewary</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/kishor-tewary" target="_blank">
+            <img src="assets/Dr Kishor Tewary.png" width="200px" alt="Dr Kishor Tewary" />
+          </a>
+          <p><strong>Specialization:</strong> Pediatric Specialist</p>
+          <p><strong>Location:</strong> Birmingham,U.K</p>
+          <p>Dr Kishor Tewary is an experienced consultant paediatrician, with a special interest in paediatric urology and nephrology, treating conditions such as bedwetting, urinary incontinence, urinary tract infections and hydronephrosis. He also treats a wide range of general paediatric conditions including abdominal pain, gastric reflux and asthma. Dr Kishor Tewary is based across the Midlands, in both Birmingham and Solihull.</p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/kishor-tewary" target="_blank">Visit Profile</a></p>
         </div>
-        <div class="project-card">
-          <h3>One month to DSA</h3>
-          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131704.png" alt=""></a>
-          <p>In this post on completing a month of DSA,I have shared my learnt topics and insights on how to be consistent over the period.</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_month-dsa-linkedincommunity-activity-7267441117720195074-i-Rp?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+        <div class="project-card" data-specialization="Pediatric Specialist">
+          <h3>Dr Kanika Grover</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/kanika-grover" target="_blank">
+            <img src="assets/Dr Kanika Grover.png" width="200px" alt="Dr Kanika Grover" />
+          </a>
+          <p><strong>Specialization:</strong> Pediatric Specialist</p>
+          <p><strong>Location:</strong> Yorkshire</p>
+          <p>Dr Kanika Grover is a highly respected consultant paediatrician based in Hull with a special interest in developmental paediatrics. She exclusively conducts autism assessments, and is also renowned for her expertise in community paediatrics, childhood neurodisability, and the care of looked-after children and those in the adoption process.</p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/kanika-grover" target="_blank">Visit Profile</a></p>
         </div>
-        <div class="project-card">
-          <h3>Published First Blog on Hashnode</h3>
-          <a href = "https://www.linkedin.com/posts/sheetal-bajaj-s06091009_linkedinmembers-blog-repository-activity-7268946780925394944-EfMO?utm_source=share&utm_medium=member_desktop"><img width="200px" src="images/Screenshot 2024-12-30 131642.png" alt=""></a>
-          <p>This post is about publishing my first blog on and that too on GitHub on Hashnode.</p>
-          <p>Do check it out through the below given link or just click on the above inserted image</p>
-          <p>Link to the Post: <a href="https://www.linkedin.com/posts/sheetal-bajaj-s06091009_linkedinmembers-blog-repository-activity-7268946780925394944-EfMO?utm_source=share&utm_medium=member_desktop">Click Here</a></p>
+        
+        
+        <!-- Doctor Card 7 -->
+        <div class="project-card" data-specialization="Psychologist">
+          <h3>Dr Sarah Barker</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/sarah-barker" target="_blank">
+            <img src="assets/Dr Sarah Barker.jpeg" width="200px" alt="Dr Sarah Barker" />
+          </a>
+          <p><strong>Specialization:</strong> Psychologist</p>
+          <p><strong>Location:</strong> London</p>
+          <p>Dr Sarah Barker is a Consultant clinical psychologist based in London with over 30 years of experience. She specialises in chronic pain, post-traumatic stress disorder, physical health, anxiety and depression.</p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/sarah-barker" target="_blank">Visit Profile</a></p>
         </div>
+        
+        <!-- Doctor Card 8 -->
+        <div class="project-card" data-specialization="Psychologist">
+          <h3>Dr Simon Prangnell</h3>
+          <a href="https://www.topdoctors.co.uk/doctor/simon-prangnell" target="_blank">
+            <img src="assets/Dr Simon Prangnell.png" width="200px" alt="Dr Simon Prangnell" />
+          </a>
+          <p><strong>Specialization:</strong> Psychologist</p>
+          <p><strong>Location:</strong> London</p>
+          <p>Dr. Lucia focuses on autism diagnosis and therapy in bilingual children. She brings cultural sensitivity and community involvement into her practice.</p>
+          <p><a href="https://www.topdoctors.co.uk/doctor/simon-prangnell" target="_blank">Visit Profile</a></p>
+        </div>
+         
+          
+
+
       </div>
     </div>
   </section>
+  
   <section id="kanban">
     <div class="container">
 

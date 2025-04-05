@@ -131,3 +131,16 @@ function goBack() {
     document.querySelectorAll(".workout-section").forEach(section => section.style.display = "none");
     document.getElementById("workout-options").style.display = "block";
 }
+document.getElementById('specializationFilter').addEventListener('change', function () {
+    const selected = this.value;
+    const cards = document.querySelectorAll('.project-card');
+
+    cards.forEach(card => {
+      const specialization = card.getAttribute('data-specialization');
+      if (selected === 'all' || specialization === selected) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
